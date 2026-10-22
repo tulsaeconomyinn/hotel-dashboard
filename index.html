@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tulsa Hotels — Performance Dashboard</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background:#0b0f17; color:#e6edf3; font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; padding:16px; max-width:860px; margin:0 auto; }
+  h1 { font-size:22px; color:#7dd3fc; letter-spacing:.3px; }
+  .sub { color:#8b98a9; font-size:13px; margin:4px 0 18px; }
+  h2 { font-size:16px; color:#7dd3fc; margin:22px 0 8px; }
+  .cards { display:flex; flex-wrap:wrap; gap:10px; margin-bottom:6px; }
+  .card { flex:1 1 140px; background:#131a26; border:1px solid #22304a; border-radius:10px; padding:12px; }
+  .card .k { font-size:11px; color:#8b98a9; text-transform:uppercase; letter-spacing:.6px; }
+  .card .v { font-size:20px; font-weight:700; margin-top:4px; }
+  .wrap { overflow-x:auto; background:#131a26; border:1px solid #22304a; border-radius:10px; }
+  table { width:100%; border-collapse:collapse; font-size:14px; min-width:520px; }
+  th, td { padding:8px 10px; text-align:right; white-space:nowrap; }
+  th { color:#8b98a9; font-size:11px; text-transform:uppercase; letter-spacing:.5px; border-bottom:1px solid #22304a; }
+  td.prop, th.prop { text-align:left; font-weight:600; }
+  tr.total td { border-top:2px solid #22304a; font-weight:700; color:#fff; }
+  .up { color:#34d399; } .down { color:#f87171; } .na { color:#5b6b80; }
+  img.graph { width:100%; border-radius:10px; border:1px solid #22304a; margin-top:6px; }
+  .foot { color:#5b6b80; font-size:12px; margin-top:14px; line-height:1.5; }
+</style>
+</head>
+<body>
+<h1>🏨 Tulsa Hotels — Performance Dashboard</h1>
+<p class="sub">Data through Wednesday, October 21, 2026 · Updated every morning</p>
+
+<div class="cards">
+  <div class="card"><div class="k">Yesterday's revenue</div><div class="v">$10,745</div></div>
+  <div class="card"><div class="k">Month to date</div><div class="v">$244,144</div></div>
+  <div class="card"><div class="k">End-of-month forecast</div><div class="v">$355,971</div></div>
+  <div class="card"><div class="k">End-of-year forecast</div><div class="v">$3,026,997</div></div>
+</div>
+
+<h2>Yesterday — Wednesday, October 21, 2026</h2>
+<div class="wrap"><table>
+<tr><th class="prop">Property</th><th>Revenue</th><th>vs last year</th><th>Occupancy</th><th>ADR</th><th>RevPAR</th></tr>
+<tr><td class='prop'>Tudor</td><td>$1,581</td><td><span class="up">▲ $29</span></td><td>82.5%</td><td>$47.91</td><td>$39.52</td></tr><tr><td class='prop'>Economy Suites – Fairgrounds</td><td>$1,485</td><td><span class="na">n/a</span></td><td>66.7%</td><td>$42.42</td><td>$27.50</td></tr><tr><td class='prop'>Motel 6</td><td>$1,650</td><td><span class="na">n/a</span></td><td>63.0%</td><td>$48.52</td><td>$30.55</td></tr><tr><td class='prop'>Economy Inn & Suites</td><td>$2,672</td><td><span class="down">▼ $129</span></td><td>94.9%</td><td>$36.10</td><td>$34.25</td></tr><tr><td class='prop'>Airport Inn & Suites</td><td>$639</td><td><span class="down">▼ $269</span></td><td>65.4%</td><td>$37.57</td><td>$24.56</td></tr><tr><td class='prop'>Rest Inn</td><td>$2,719</td><td><span class="na">n/a</span></td><td>70.0%</td><td>$38.85</td><td>$27.19</td></tr><tr class='total'><td class='prop'>Portfolio total</td><td>$10,745</td><td><span class="down">▼ $369</span></td><td></td><td></td><td></td></tr>
+</table></div>
+<p class="foot">▲▼ show the change in revenue vs the same day last year. Prior-year data available for: Tudor, Economy Inn & Suites, Airport Inn & Suites.</p>
+
+<h2>Month — MTD actual vs end-of-month forecast</h2>
+<div class="wrap"><table>
+<tr><th class="prop">Property</th><th>MTD revenue</th><th>MTD occ</th><th>MTD RevPAR</th><th>EOM forecast</th><th>Oct 2025 actual</th></tr>
+<tr><td class='prop'>Tudor</td><td>$35,350</td><td>87.7%</td><td>$42.08</td><td>$51,748</td><td>$55,255</td></tr><tr><td class='prop'>Economy Suites – Fairgrounds</td><td>$36,177</td><td>76.6%</td><td>$31.90</td><td>$51,899</td><td>n/a</td></tr><tr><td class='prop'>Motel 6</td><td>$39,236</td><td>67.0%</td><td>$34.60</td><td>$56,372</td><td>n/a</td></tr><tr><td class='prop'>Economy Inn & Suites</td><td>$54,752</td><td>90.7%</td><td>$33.43</td><td>$81,163</td><td>$88,429</td></tr><tr><td class='prop'>Airport Inn & Suites</td><td>$14,370</td><td>74.0%</td><td>$26.32</td><td>$20,866</td><td>$26,815</td></tr><tr><td class='prop'>Rest Inn</td><td>$64,259</td><td>77.9%</td><td>$30.60</td><td>$93,924</td><td>n/a</td></tr><tr class='total'><td class='prop'>Portfolio total</td><td>$244,144</td><td></td><td></td><td>$355,971</td><td>$170,500</td></tr>
+</table></div>
+
+<h2>Year — 2025 actual vs 2026</h2>
+<div class="wrap"><table>
+<tr><th class="prop">Property</th><th>YTD actual</th><th>EOY forecast</th><th>2025 full year</th></tr>
+<tr><td class='prop'>Tudor</td><td>$537,896</td><td>$654,322</td><td>$424,585</td></tr><tr><td class='prop'>Economy Suites – Fairgrounds</td><td>$544,147</td><td>$655,769</td><td>n/a</td></tr><tr><td class='prop'>Motel 6</td><td>$183,854</td><td>$305,523</td><td>n/a</td></tr><tr><td class='prop'>Economy Inn & Suites</td><td>$845,534</td><td>$1,033,054</td><td>$896,490</td></tr><tr><td class='prop'>Airport Inn & Suites</td><td>$57,334</td><td>$103,450</td><td>n/a</td></tr><tr><td class='prop'>Rest Inn</td><td>$64,259</td><td>$274,878</td><td>n/a</td></tr><tr class='total'><td class='prop'>Portfolio total</td><td>$2,233,024</td><td>$3,026,997</td><td>$1,321,075</td></tr>
+</table></div>
+
+<h2>Trends — revenue, occupancy &amp; RevPAR since Jan 1</h2>
+<img class="graph" src="graph_combined.png" alt="Hotel performance trends">
+
+<h2>Monthly revenue — 2026 vs 2025 (portfolio)</h2>
+<div class="wrap"><table>
+<tr><th class="prop">Month</th><th>2026</th><th>2025</th><th>Change</th></tr>
+<tr><td class='prop'>January</td><td>$207,243</td><td>$68,846</td><td><span class="up">▲ 201.0%</span></td></tr><tr><td class='prop'>February</td><td>$193,175</td><td>$64,390</td><td><span class="up">▲ 200.0%</span></td></tr><tr><td class='prop'>March</td><td>$225,027</td><td>$72,215</td><td><span class="up">▲ 211.6%</span></td></tr><tr><td class='prop'>April</td><td>$234,782</td><td>$85,724</td><td><span class="up">▲ 173.9%</span></td></tr><tr><td class='prop'>May</td><td>$237,130</td><td>$118,476</td><td><span class="up">▲ 100.2%</span></td></tr><tr><td class='prop'>June</td><td>$235,908</td><td>$127,022</td><td><span class="up">▲ 85.7%</span></td></tr><tr><td class='prop'>July</td><td>$236,108</td><td>$147,159</td><td><span class="up">▲ 60.4%</span></td></tr><tr><td class='prop'>August</td><td>$287,309</td><td>$152,344</td><td><span class="up">▲ 88.6%</span></td></tr><tr><td class='prop'>September</td><td>$272,605</td><td>$156,869</td><td><span class="up">▲ 73.8%</span></td></tr><tr><td class='prop'>October (MTD)</td><td>$246,443</td><td>$170,500</td><td><span class="up">▲ 44.5%</span></td></tr>
+</table></div>
+
+<h2>Last 30 days (portfolio)</h2>
+<div class="wrap"><table>
+<tr><th class="prop">Day</th><th>Revenue</th><th>Occupancy</th></tr>
+<tr><td class='prop'>Wed Oct 21</td><td>$10,745</td><td>75.0%</td></tr><tr><td class='prop'>Tue Oct 20</td><td>$10,417</td><td>72.7%</td></tr><tr><td class='prop'>Mon Oct 19</td><td>$10,429</td><td>73.3%</td></tr><tr><td class='prop'>Sun Oct 18</td><td>$10,789</td><td>73.0%</td></tr><tr><td class='prop'>Sat Oct 17</td><td>$12,619</td><td>83.5%</td></tr><tr><td class='prop'>Fri Oct 16</td><td>$12,048</td><td>81.0%</td></tr><tr><td class='prop'>Thu Oct 15</td><td>$11,232</td><td>77.3%</td></tr><tr><td class='prop'>Wed Oct 14</td><td>$10,888</td><td>75.3%</td></tr><tr><td class='prop'>Tue Oct 13</td><td>$10,954</td><td>75.6%</td></tr><tr><td class='prop'>Mon Oct 12</td><td>$11,525</td><td>78.4%</td></tr><tr><td class='prop'>Sun Oct 11</td><td>$11,942</td><td>82.4%</td></tr><tr><td class='prop'>Sat Oct 10</td><td>$13,750</td><td>90.6%</td></tr><tr><td class='prop'>Fri Oct 9</td><td>$13,676</td><td>90.3%</td></tr><tr><td class='prop'>Thu Oct 8</td><td>$11,799</td><td>80.1%</td></tr><tr><td class='prop'>Wed Oct 7</td><td>$11,537</td><td>79.8%</td></tr><tr><td class='prop'>Tue Oct 6</td><td>$11,118</td><td>77.3%</td></tr><tr><td class='prop'>Mon Oct 5</td><td>$11,296</td><td>78.1%</td></tr><tr><td class='prop'>Sun Oct 4</td><td>$11,546</td><td>78.7%</td></tr><tr><td class='prop'>Sat Oct 3</td><td>$13,041</td><td>85.2%</td></tr><tr><td class='prop'>Fri Oct 2</td><td>$12,872</td><td>86.1%</td></tr><tr><td class='prop'>Thu Oct 1</td><td>$12,220</td><td>80.1%</td></tr>
+</table></div>
+
+<p class="foot">Occupancy and RevPAR are true values against total inventory (352 rooms across the six operating properties). Forecasts are pace-based from month-to-date / year-to-date actuals.</p>
+</body>
+</html>
